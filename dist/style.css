@@ -1,3 +1,13 @@
+/*-- Index --*/
+
+/*
+1. Normalize
+2. Global
+3. Grid
+4. Content
+*/
+
+/*-- 1. Normalize --*/
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -5,11 +15,7 @@ html {
 
 body {
   margin: 0;
-  height:100%;
-}
-
-main {
-  display: block;
+  min-height:100vh;
 }
 
 h1 {
@@ -17,11 +23,28 @@ h1 {
   margin: 0.67em 0;
 }
 
+/*-- 2. Global --*/
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main{
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns:repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
   max-width:500px;
-  height:500px;
+  height:100%;
   aspect-ratio: 1 / 1;
   background:black;
 }
+
+main > *{
+  border: 1px solid white;
+}
+
+
+
