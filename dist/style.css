@@ -39,11 +39,10 @@ main{
   max-width:500px;
   height:100%;
   aspect-ratio: 1 / 1;
-  background:black;
 }
 
 main > *{
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 

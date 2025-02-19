@@ -7,11 +7,25 @@ function hello(who) {
 const mainGrid = document.querySelector('main')
 
 if (mainGrid) {
-     for (let j = 0; j < 20*20; j++) {
-          const cell = document.createElement('div')
-          cell.classList.add('cell')
-          mainGrid.appendChild(cell)
+     const totalCells = 20 * 20;
+     const bombCount = Math.floor(totalCells * 0.1); // 10% des cellules
+     const bombIndices = new Set();
+
+     // Générer des indices uniques pour les bombes
+     while (bombIndices.size < bombCount) {
+          const randomIndex = Math.floor(Math.random() * totalCells);
+          bombIndices.add(randomIndex);
+     }
+
+     for (let j = 0; j < totalCells; j++) {
+          const cell = document.createElement('div');
+          cell.classList.add('cell');
+          if (bombIndices.has(j)) {
+               cell.innerHTML = '&#128163'; // Insérer le caractère "💣"
+          }
+          mainGrid.appendChild(cell);
      }
 } else {
      console.error("Main grid element not found");
 }
+
