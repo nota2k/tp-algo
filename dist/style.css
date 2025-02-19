@@ -39,6 +39,7 @@ main{
   max-width:500px;
   height:100%;
   aspect-ratio: 1 / 1;
+  background: white; /* Assurez-vous que la couleur de fond n'est pas noire */
 }
 
 main > *{
