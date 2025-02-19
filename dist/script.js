@@ -1,4 +1,4 @@
-var WORLD = 'JS-World';
+let WORLD = 'JS-World';
 
 function hello(who) {
      return 'Hello, ' + (who || WORLD);
