@@ -1,0 +1,17 @@
+{
+     "name": "my-ts-project",
+     "version": "1.0.0",
+     "description": "A project using TypeScript with HTML and CSS",
+     "main": "dist/index.js",
+     "scripts": {
+          "build": "tsc",
+          "start": "tsc && lite-server"
+     },
+     "author": "",
+     "license": "ISC",
+     "devDependencies": {
+          "typescript": "^4.0.0",
+          "lite-server": "^2.5.4"
+     },
+     "dependencies": {}
+}

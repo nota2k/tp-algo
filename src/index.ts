@@ -1,6 +1,6 @@
 const WORLD = "JS-World";
 
-expert function hello(who:string = WORLD): string {
+export function hello(who:string = WORLD): string {
   return `Hello$(who)... Hot Reload`;
 }
 
