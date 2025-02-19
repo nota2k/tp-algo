@@ -45,5 +45,15 @@ main > *{
   border: 1px solid black;
 }
 
+.cell{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.revealed{
+  background: rgb(0, 255, 213);
+}
+
 
 
